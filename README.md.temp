@@ -1,0 +1,2 @@
+Better to be fluent in commands like sed, cat. (For general purpose and convenience) 
+E.g. strangely sed -i '^[\n]d' README.md did not work for me, but assigning suffix to i (i.temp) made it execute somehow.
