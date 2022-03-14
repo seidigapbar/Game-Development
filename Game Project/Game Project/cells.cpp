@@ -13,19 +13,19 @@ Cell::Cell(int production)
     
 }
 
-void* Cell::GetHost(){
-    return this->host;
+Player* Cell::GetPlayer(){
+    return this->player_owner;
 }
 
-void Cell::SetHost(void* host){
-    this->host = host;
+void Cell::SetPlayer(Player* player){
+    this->player_owner = player;
 }
 
 int Cell::GetProduction(){
     return this->production;
 }
 
-void Cell::AddUnit(void* unit){
+void Cell::AddUnit(Unit* unit){
     //if (unit.type_of_movement is in who_can_move)
     //else perror("Cannot move here!");
     if (this->unit_presence != NULL)
@@ -40,7 +40,7 @@ void Cell::AddUnit(void* unit){
     
 }
 
-void Cell::AddBuilding(void* building){
+void Cell::AddBuilding(Building* building){
     if (this->unit_presence != NULL)
     {
         //Check if the unit friendly, something like
@@ -52,13 +52,14 @@ void Cell::AddBuilding(void* building){
         return;
     }
     this->building_presence = building;
+    //Initialize a building here
 }
 
 Unit* Cell::GetUnit(){
     return this->unit_presence;
 }
 
-void* Cell::GetBuilding()
+Building* Cell::GetBuilding()
 {
     return this->building_presence;
 }

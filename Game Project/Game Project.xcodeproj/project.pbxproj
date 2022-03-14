@@ -12,6 +12,8 @@
 		CDBBF15427DBC850002A13BE /* maps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBBF15227DBC850002A13BE /* maps.cpp */; };
 		CDBBF15727DBCCE0002A13BE /* cells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBBF15527DBCCE0002A13BE /* cells.cpp */; };
 		CDBBF15A27DBD6ED002A13BE /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBBF15827DBD6ED002A13BE /* unit.cpp */; };
+		CDBBF15D27DBDB7F002A13BE /* building.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBBF15B27DBDB7F002A13BE /* building.cpp */; };
+		CDBBF16027DBDBB8002A13BE /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBBF15E27DBDBB8002A13BE /* player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		CDBBF15627DBCCE0002A13BE /* cells.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cells.hpp; sourceTree = "<group>"; };
 		CDBBF15827DBD6ED002A13BE /* unit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unit.cpp; sourceTree = "<group>"; };
 		CDBBF15927DBD6ED002A13BE /* unit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = unit.hpp; sourceTree = "<group>"; };
+		CDBBF15B27DBDB7F002A13BE /* building.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = building.cpp; sourceTree = "<group>"; };
+		CDBBF15C27DBDB7F002A13BE /* building.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = building.hpp; sourceTree = "<group>"; };
+		CDBBF15E27DBDBB8002A13BE /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		CDBBF15F27DBDBB8002A13BE /* player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				CDBBF14527DBC38A002A13BE /* main.cpp */,
+				CDBBF15E27DBDBB8002A13BE /* player.cpp */,
+				CDBBF15F27DBDBB8002A13BE /* player.hpp */,
 				CDBBF14F27DBC7FE002A13BE /* mainmenu.cpp */,
 				CDBBF15027DBC7FE002A13BE /* mainmenu.hpp */,
 				CDBBF15227DBC850002A13BE /* maps.cpp */,
@@ -78,6 +86,8 @@
 				CDBBF15627DBCCE0002A13BE /* cells.hpp */,
 				CDBBF15827DBD6ED002A13BE /* unit.cpp */,
 				CDBBF15927DBD6ED002A13BE /* unit.hpp */,
+				CDBBF15B27DBDB7F002A13BE /* building.cpp */,
+				CDBBF15C27DBDB7F002A13BE /* building.hpp */,
 			);
 			path = "Game Project";
 			sourceTree = "<group>";
@@ -140,10 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBBF14627DBC38A002A13BE /* main.cpp in Sources */,
+				CDBBF15D27DBDB7F002A13BE /* building.cpp in Sources */,
 				CDBBF15727DBCCE0002A13BE /* cells.cpp in Sources */,
 				CDBBF15127DBC7FE002A13BE /* mainmenu.cpp in Sources */,
 				CDBBF15A27DBD6ED002A13BE /* unit.cpp in Sources */,
 				CDBBF15427DBC850002A13BE /* maps.cpp in Sources */,
+				CDBBF16027DBDBB8002A13BE /* player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

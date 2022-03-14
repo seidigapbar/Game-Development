@@ -6,3 +6,7 @@
 //
 
 #include "building.hpp"
+
+Player* Building::GetPlayer(){
+    return this->player_owner;
+}

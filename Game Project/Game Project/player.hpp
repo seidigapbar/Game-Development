@@ -9,5 +9,15 @@
 #define player_hpp
 
 #include <stdio.h>
+#include <string>
+
+class Player{
+public:
+    Player();
+    ~Player();
+private:
+    u_int64_t gold;
+    const std::string ID;
+};
 
 #endif /* player_hpp */

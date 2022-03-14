@@ -8,6 +8,17 @@
 #ifndef building_hpp
 #define building_hpp
 
+#include "player.hpp"
 #include <stdio.h>
+
+class Building{
+public:
+    Building();
+    ~Building();
+    Player* GetPlayer();
+private:
+    const int health_capacity; //Maybe not applicable?
+    Player* player_owner;
+};
 
 #endif /* building_hpp */
