@@ -8,10 +8,7 @@
 #include "cells.hpp"
 
 Cell::Cell(int production)
-    :production(production)
-{
-    
-}
+    :production(production){}
 
 Player* Cell::GetPlayer(){
     return this->player_owner;

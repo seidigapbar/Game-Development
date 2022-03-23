@@ -16,8 +16,9 @@ public:
     Player();
     ~Player();
 private:
+    static uint8_t number_of_players;
     u_int64_t gold;
-    const std::string ID;
+    const int ID;
 };
 
 #endif /* player_hpp */

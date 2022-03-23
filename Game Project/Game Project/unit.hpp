@@ -19,6 +19,7 @@ public:
     virtual int GetHealth();
     virtual int Move(Cell *cell);
     virtual Cell* GetPosition();
+    virtual void Die();
 private:
     const int health_capacity;
     int current_health;

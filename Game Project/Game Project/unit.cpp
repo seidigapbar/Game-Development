@@ -8,17 +8,20 @@
 #include "unit.hpp"
 
 Unit::Unit(int health_capacity)
-    :health_capacity(health_capacity)
-{
-    
+    :health_capacity(health_capacity){}
+
+Unit::~Unit(){
+    free(this);
 }
 
-int Unit::GetHealth()
-{
+int Unit::GetHealth(){
     return this->current_health;
 }
 
-Cell* Unit::GetPosition()
-{
+Cell* Unit::GetPosition(){
     return this->position;
+}
+
+void Unit::Die(){
+    this->~Unit();
 }

@@ -1,0 +1,430 @@
+Wed Mar 23 22:15:24 2022: build-wrapper, version 6.32 (macosx-x86)
+Wed Mar 23 22:15:24 2022: System name: Darwin Nodename: Sanzhars-MacBook-Pro.local Release: 21.3.0 Version: Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_X86_64 Machine: x86_64
+Wed Mar 23 22:15:24 2022: socket path: /tmp/build-wrapper-socket.Lyo8WR
+Wed Mar 23 22:15:24 2022: dynamic library found: /Users/seidigapbarsanzhar/build-wrapper-macosx-x86/libinterceptor.dylib
+Wed Mar 23 22:15:24 2022: cwd: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: command executed as: <build-wrapper-macosx-x86 --out-dir build_wrapper_output_directory>
+Wed Mar 23 22:15:24 2022: out-dir absolute path: </Users/seidigapbarsanzhar/Desktop/Game-Development/build_wrapper_output_directory>
+Wed Mar 23 22:15:24 2022: command line received: <make clean all>
+Wed Mar 23 22:15:24 2022: env 0: <TERM_PROGRAM=Apple_Terminal>
+Wed Mar 23 22:15:24 2022: env 1: <SHELL=/bin/bash>
+Wed Mar 23 22:15:24 2022: env 2: <TERM=xterm-256color>
+Wed Mar 23 22:15:24 2022: env 3: <TMPDIR=/var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/>
+Wed Mar 23 22:15:24 2022: env 4: <CONDA_SHLVL=1>
+Wed Mar 23 22:15:24 2022: env 5: <CONDA_PROMPT_MODIFIER=(base) >
+Wed Mar 23 22:15:24 2022: env 6: <TERM_PROGRAM_VERSION=443>
+Wed Mar 23 22:15:24 2022: env 7: <OLDPWD=/Users/seidigapbarsanzhar/Desktop/Game-Development/Game Project>
+Wed Mar 23 22:15:24 2022: env 8: <TERM_SESSION_ID=4AC816E7-8F48-4E30-B988-A65BA4CFB136>
+Wed Mar 23 22:15:24 2022: env 9: <USER=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: env 10: <CONDA_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/conda>
+Wed Mar 23 22:15:24 2022: env 11: <SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.PVE0OqFTRj/Listeners>
+Wed Mar 23 22:15:24 2022: env 12: <_CE_CONDA=>
+Wed Mar 23 22:15:24 2022: env 13: <PATH=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86:/Users/seidigapbarsanzhar/sonar-scanner-4.6.1.2450-macosx/bin:/Users/seidigapbarsanzhar/opt/anaconda3/bin:/Users/seidigapbarsanzhar/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin>
+Wed Mar 23 22:15:24 2022: env 14: <CONDA_PREFIX=/Users/seidigapbarsanzhar/opt/anaconda3>
+Wed Mar 23 22:15:24 2022: env 15: <__CFBundleIdentifier=com.apple.Terminal>
+Wed Mar 23 22:15:24 2022: env 16: <PWD=/Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: env 17: <XPC_FLAGS=0x0>
+Wed Mar 23 22:15:24 2022: env 18: <PS1=\[\e[1;31m\]\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ >
+Wed Mar 23 22:15:24 2022: env 19: <_CE_M=>
+Wed Mar 23 22:15:24 2022: env 20: <XPC_SERVICE_NAME=0>
+Wed Mar 23 22:15:24 2022: env 21: <SHLVL=1>
+Wed Mar 23 22:15:24 2022: env 22: <HOME=/Users/seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: env 23: <CONDA_PYTHON_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/python>
+Wed Mar 23 22:15:24 2022: env 24: <LOGNAME=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: env 25: <LC_CTYPE=UTF-8>
+Wed Mar 23 22:15:24 2022: env 26: <CONDA_DEFAULT_ENV=base>
+Wed Mar 23 22:15:24 2022: env 27: <_=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: executing: <make clean all>
+Wed Mar 23 22:15:24 2022: initializing json file
+Wed Mar 23 22:15:24 2022: process created with pid: 15645
+Wed Mar 23 22:15:24 2022: parent pid: 15644
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </Users/seidigapbarsanzhar/build-wrapper-macosx-x86/build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: argv[0]: <build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: argv[1]: <-c>
+Wed Mar 23 22:15:24 2022: argv[2]: <>
+Wed Mar 23 22:15:24 2022: argv[3]: <make>
+Wed Mar 23 22:15:24 2022: argv[4]: <clean>
+Wed Mar 23 22:15:24 2022: argv[5]: <all>
+Wed Mar 23 22:15:24 2022: skipping process with pid: 15645
+Wed Mar 23 22:15:24 2022: process created with pid: 15646
+Wed Mar 23 22:15:24 2022: parent pid: 15645
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </private/tmp/sonarsource-build-wrapper-cache-501/usr/bin/make>
+Wed Mar 23 22:15:24 2022: argv[0]: <make>
+Wed Mar 23 22:15:24 2022: argv[1]: <clean>
+Wed Mar 23 22:15:24 2022: argv[2]: <all>
+Wed Mar 23 22:15:24 2022: skipping process with pid: 15646
+Wed Mar 23 22:15:24 2022: process created with pid: 15646
+Wed Mar 23 22:15:24 2022: parent pid: 15645
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </Applications/Xcode.app/Contents/Developer/usr/bin/make>
+Wed Mar 23 22:15:24 2022: argv[0]: </Applications/Xcode.app/Contents/Developer/usr/bin/make>
+Wed Mar 23 22:15:24 2022: argv[1]: <clean>
+Wed Mar 23 22:15:24 2022: argv[2]: <all>
+Wed Mar 23 22:15:24 2022: skipping process with pid: 15646
+Wed Mar 23 22:15:24 2022: process created with pid: 15647
+Wed Mar 23 22:15:24 2022: parent pid: 15646
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </private/tmp/sonarsource-build-wrapper-cache-501/bin/rm>
+Wed Mar 23 22:15:24 2022: argv[0]: <rm>
+Wed Mar 23 22:15:24 2022: argv[1]: <build/debug/play>
+Wed Mar 23 22:15:24 2022: skipping process with pid: 15647
+Wed Mar 23 22:15:24 2022: process created with pid: 15648
+Wed Mar 23 22:15:24 2022: parent pid: 15646
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </private/tmp/sonarsource-build-wrapper-cache-501/usr/bin/g++>
+Wed Mar 23 22:15:24 2022: argv[0]: <g++>
+Wed Mar 23 22:15:24 2022: argv[1]: <-std=c++11>
+Wed Mar 23 22:15:24 2022: argv[2]: <-Wall>
+Wed Mar 23 22:15:24 2022: argv[3]: <-O0>
+Wed Mar 23 22:15:24 2022: argv[4]: <-g>
+Wed Mar 23 22:15:24 2022: argv[5]: <-lsdl2>
+Wed Mar 23 22:15:24 2022: argv[6]: <-Iinclude>
+Wed Mar 23 22:15:24 2022: argv[7]: <-Llib>
+Wed Mar 23 22:15:24 2022: argv[8]: <src/main.cpp>
+Wed Mar 23 22:15:24 2022: argv[9]: <-o>
+Wed Mar 23 22:15:24 2022: argv[10]: <build/debug/play>
+Wed Mar 23 22:15:24 2022: envp[0]: <SQ_WRAPPER_SOCKET=/tmp/build-wrapper-socket.Lyo8WR>
+Wed Mar 23 22:15:24 2022: envp[1]: <SQ_WRAPPER_LIBRARY=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/libinterceptor.dylib>
+Wed Mar 23 22:15:24 2022: envp[2]: <LC_CTYPE=UTF-8>
+Wed Mar 23 22:15:24 2022: envp[3]: <SHELL=/bin/bash>
+Wed Mar 23 22:15:24 2022: envp[4]: <_=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: envp[5]: <__CFBundleIdentifier=com.apple.Terminal>
+Wed Mar 23 22:15:24 2022: envp[6]: <PATH=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86:/Users/seidigapbarsanzhar/sonar-scanner-4.6.1.2450-macosx/bin:/Users/seidigapbarsanzhar/opt/anaconda3/bin:/Users/seidigapbarsanzhar/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin>
+Wed Mar 23 22:15:24 2022: envp[7]: <SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.PVE0OqFTRj/Listeners>
+Wed Mar 23 22:15:24 2022: envp[8]: <CONDA_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/conda>
+Wed Mar 23 22:15:24 2022: envp[9]: <PWD=/Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: envp[10]: <HOME=/Users/seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[11]: <LOGNAME=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[12]: <CONDA_PROMPT_MODIFIER=(base) >
+Wed Mar 23 22:15:24 2022: envp[13]: <CONDA_DEFAULT_ENV=base>
+Wed Mar 23 22:15:24 2022: envp[14]: <XPC_FLAGS=0x0>
+Wed Mar 23 22:15:24 2022: envp[15]: <SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[16]: <USER=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[17]: <TERM_SESSION_ID=4AC816E7-8F48-4E30-B988-A65BA4CFB136>
+Wed Mar 23 22:15:24 2022: envp[18]: <CONDA_SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[19]: <OLDPWD=/Users/seidigapbarsanzhar/Desktop/Game-Development/Game Project>
+Wed Mar 23 22:15:24 2022: envp[20]: <TERM_PROGRAM=Apple_Terminal>
+Wed Mar 23 22:15:24 2022: envp[21]: <TMPDIR=/var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/>
+Wed Mar 23 22:15:24 2022: envp[22]: <MAKEFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[23]: <MFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[24]: <TERM_PROGRAM_VERSION=443>
+Wed Mar 23 22:15:24 2022: envp[25]: <XPC_SERVICE_NAME=0>
+Wed Mar 23 22:15:24 2022: envp[26]: <__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0>
+Wed Mar 23 22:15:24 2022: envp[27]: <PS1=\[\e[1;31m\]\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ >
+Wed Mar 23 22:15:24 2022: envp[28]: <CONDA_PYTHON_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/python>
+Wed Mar 23 22:15:24 2022: envp[29]: <_CE_M=>
+Wed Mar 23 22:15:24 2022: envp[30]: <CONDA_PREFIX=/Users/seidigapbarsanzhar/opt/anaconda3>
+Wed Mar 23 22:15:24 2022: envp[31]: <TERM=xterm-256color>
+Wed Mar 23 22:15:24 2022: envp[32]: <_CE_CONDA=>
+Wed Mar 23 22:15:24 2022: envp[33]: <MAKELEVEL=1>
+Wed Mar 23 22:15:24 2022: envp[34]: <DYLD_INSERT_LIBRARIES=>
+Wed Mar 23 22:15:24 2022: process created with pid: 15648
+Wed Mar 23 22:15:24 2022: parent pid: 15646
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </Applications/Xcode.app/Contents/Developer/usr/bin/gcc>
+Wed Mar 23 22:15:24 2022: argv[0]: </Applications/Xcode.app/Contents/Developer/usr/bin/g++>
+Wed Mar 23 22:15:24 2022: argv[1]: <-std=c++11>
+Wed Mar 23 22:15:24 2022: argv[2]: <-Wall>
+Wed Mar 23 22:15:24 2022: argv[3]: <-O0>
+Wed Mar 23 22:15:24 2022: argv[4]: <-g>
+Wed Mar 23 22:15:24 2022: argv[5]: <-lsdl2>
+Wed Mar 23 22:15:24 2022: argv[6]: <-Iinclude>
+Wed Mar 23 22:15:24 2022: argv[7]: <-Llib>
+Wed Mar 23 22:15:24 2022: argv[8]: <src/main.cpp>
+Wed Mar 23 22:15:24 2022: argv[9]: <-o>
+Wed Mar 23 22:15:24 2022: argv[10]: <build/debug/play>
+Wed Mar 23 22:15:24 2022: envp[0]: <SQ_WRAPPER_SOCKET=/tmp/build-wrapper-socket.Lyo8WR>
+Wed Mar 23 22:15:24 2022: envp[1]: <SQ_WRAPPER_LIBRARY=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/libinterceptor.dylib>
+Wed Mar 23 22:15:24 2022: envp[2]: <LC_CTYPE=UTF-8>
+Wed Mar 23 22:15:24 2022: envp[3]: <SHELL=/bin/bash>
+Wed Mar 23 22:15:24 2022: envp[4]: <_=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: envp[5]: <__CFBundleIdentifier=com.apple.Terminal>
+Wed Mar 23 22:15:24 2022: envp[6]: <PATH=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86:/Users/seidigapbarsanzhar/sonar-scanner-4.6.1.2450-macosx/bin:/Users/seidigapbarsanzhar/opt/anaconda3/bin:/Users/seidigapbarsanzhar/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin>
+Wed Mar 23 22:15:24 2022: envp[7]: <SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.PVE0OqFTRj/Listeners>
+Wed Mar 23 22:15:24 2022: envp[8]: <CONDA_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/conda>
+Wed Mar 23 22:15:24 2022: envp[9]: <PWD=/Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: envp[10]: <HOME=/Users/seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[11]: <LOGNAME=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[12]: <CONDA_PROMPT_MODIFIER=(base) >
+Wed Mar 23 22:15:24 2022: envp[13]: <CONDA_DEFAULT_ENV=base>
+Wed Mar 23 22:15:24 2022: envp[14]: <XPC_FLAGS=0x0>
+Wed Mar 23 22:15:24 2022: envp[15]: <SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[16]: <USER=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[17]: <TERM_SESSION_ID=4AC816E7-8F48-4E30-B988-A65BA4CFB136>
+Wed Mar 23 22:15:24 2022: envp[18]: <CONDA_SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[19]: <OLDPWD=/Users/seidigapbarsanzhar/Desktop/Game-Development/Game Project>
+Wed Mar 23 22:15:24 2022: envp[20]: <TERM_PROGRAM=Apple_Terminal>
+Wed Mar 23 22:15:24 2022: envp[21]: <TMPDIR=/var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/>
+Wed Mar 23 22:15:24 2022: envp[22]: <MAKEFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[23]: <MFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[24]: <TERM_PROGRAM_VERSION=443>
+Wed Mar 23 22:15:24 2022: envp[25]: <XPC_SERVICE_NAME=0>
+Wed Mar 23 22:15:24 2022: envp[26]: <__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0>
+Wed Mar 23 22:15:24 2022: envp[27]: <PS1=\[\e[1;31m\]\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ >
+Wed Mar 23 22:15:24 2022: envp[28]: <CONDA_PYTHON_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/python>
+Wed Mar 23 22:15:24 2022: envp[29]: <_CE_M=>
+Wed Mar 23 22:15:24 2022: envp[30]: <CONDA_PREFIX=/Users/seidigapbarsanzhar/opt/anaconda3>
+Wed Mar 23 22:15:24 2022: envp[31]: <TERM=xterm-256color>
+Wed Mar 23 22:15:24 2022: envp[32]: <_CE_CONDA=>
+Wed Mar 23 22:15:24 2022: envp[33]: <MAKELEVEL=1>
+Wed Mar 23 22:15:24 2022: envp[34]: <SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk>
+Wed Mar 23 22:15:24 2022: envp[35]: <CPATH=/usr/local/include>
+Wed Mar 23 22:15:24 2022: envp[36]: <LIBRARY_PATH=/usr/local/lib>
+Wed Mar 23 22:15:24 2022: envp[37]: <DYLD_INSERT_LIBRARIES=>
+Wed Mar 23 22:15:24 2022: process created with pid: 15648
+Wed Mar 23 22:15:24 2022: parent pid: 15646
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </private/tmp/sonarsource-build-wrapper-cache-501/usr/bin/xcrun>
+Wed Mar 23 22:15:24 2022: argv[0]: </usr/bin/xcrun>
+Wed Mar 23 22:15:24 2022: argv[1]: <clang++>
+Wed Mar 23 22:15:24 2022: argv[2]: <-std=c++11>
+Wed Mar 23 22:15:24 2022: argv[3]: <-Wall>
+Wed Mar 23 22:15:24 2022: argv[4]: <-O0>
+Wed Mar 23 22:15:24 2022: argv[5]: <-g>
+Wed Mar 23 22:15:24 2022: argv[6]: <-lsdl2>
+Wed Mar 23 22:15:24 2022: argv[7]: <-Iinclude>
+Wed Mar 23 22:15:24 2022: argv[8]: <-Llib>
+Wed Mar 23 22:15:24 2022: argv[9]: <src/main.cpp>
+Wed Mar 23 22:15:24 2022: argv[10]: <-o>
+Wed Mar 23 22:15:24 2022: argv[11]: <build/debug/play>
+Wed Mar 23 22:15:24 2022: skipping process with pid: 15648
+Wed Mar 23 22:15:24 2022: process created with pid: 15648
+Wed Mar 23 22:15:24 2022: parent pid: 15646
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang>
+Wed Mar 23 22:15:24 2022: argv[0]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++>
+Wed Mar 23 22:15:24 2022: argv[1]: <-std=c++11>
+Wed Mar 23 22:15:24 2022: argv[2]: <-Wall>
+Wed Mar 23 22:15:24 2022: argv[3]: <-O0>
+Wed Mar 23 22:15:24 2022: argv[4]: <-g>
+Wed Mar 23 22:15:24 2022: argv[5]: <-lsdl2>
+Wed Mar 23 22:15:24 2022: argv[6]: <-Iinclude>
+Wed Mar 23 22:15:24 2022: argv[7]: <-Llib>
+Wed Mar 23 22:15:24 2022: argv[8]: <src/main.cpp>
+Wed Mar 23 22:15:24 2022: argv[9]: <-o>
+Wed Mar 23 22:15:24 2022: argv[10]: <build/debug/play>
+Wed Mar 23 22:15:24 2022: envp[0]: <SQ_WRAPPER_SOCKET=/tmp/build-wrapper-socket.Lyo8WR>
+Wed Mar 23 22:15:24 2022: envp[1]: <SQ_WRAPPER_LIBRARY=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/libinterceptor.dylib>
+Wed Mar 23 22:15:24 2022: envp[2]: <LC_CTYPE=UTF-8>
+Wed Mar 23 22:15:24 2022: envp[3]: <SHELL=/bin/bash>
+Wed Mar 23 22:15:24 2022: envp[4]: <_=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: envp[5]: <__CFBundleIdentifier=com.apple.Terminal>
+Wed Mar 23 22:15:24 2022: envp[6]: <PATH=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86:/Users/seidigapbarsanzhar/sonar-scanner-4.6.1.2450-macosx/bin:/Users/seidigapbarsanzhar/opt/anaconda3/bin:/Users/seidigapbarsanzhar/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin>
+Wed Mar 23 22:15:24 2022: envp[7]: <SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.PVE0OqFTRj/Listeners>
+Wed Mar 23 22:15:24 2022: envp[8]: <CONDA_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/conda>
+Wed Mar 23 22:15:24 2022: envp[9]: <PWD=/Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: envp[10]: <HOME=/Users/seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[11]: <LOGNAME=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[12]: <CONDA_PROMPT_MODIFIER=(base) >
+Wed Mar 23 22:15:24 2022: envp[13]: <CONDA_DEFAULT_ENV=base>
+Wed Mar 23 22:15:24 2022: envp[14]: <XPC_FLAGS=0x0>
+Wed Mar 23 22:15:24 2022: envp[15]: <SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[16]: <USER=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[17]: <TERM_SESSION_ID=4AC816E7-8F48-4E30-B988-A65BA4CFB136>
+Wed Mar 23 22:15:24 2022: envp[18]: <CONDA_SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[19]: <OLDPWD=/Users/seidigapbarsanzhar/Desktop/Game-Development/Game Project>
+Wed Mar 23 22:15:24 2022: envp[20]: <TERM_PROGRAM=Apple_Terminal>
+Wed Mar 23 22:15:24 2022: envp[21]: <TMPDIR=/var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/>
+Wed Mar 23 22:15:24 2022: envp[22]: <MAKEFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[23]: <MFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[24]: <TERM_PROGRAM_VERSION=443>
+Wed Mar 23 22:15:24 2022: envp[25]: <XPC_SERVICE_NAME=0>
+Wed Mar 23 22:15:24 2022: envp[26]: <__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0>
+Wed Mar 23 22:15:24 2022: envp[27]: <PS1=\[\e[1;31m\]\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ >
+Wed Mar 23 22:15:24 2022: envp[28]: <CONDA_PYTHON_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/python>
+Wed Mar 23 22:15:24 2022: envp[29]: <_CE_M=>
+Wed Mar 23 22:15:24 2022: envp[30]: <CONDA_PREFIX=/Users/seidigapbarsanzhar/opt/anaconda3>
+Wed Mar 23 22:15:24 2022: envp[31]: <TERM=xterm-256color>
+Wed Mar 23 22:15:24 2022: envp[32]: <_CE_CONDA=>
+Wed Mar 23 22:15:24 2022: envp[33]: <MAKELEVEL=1>
+Wed Mar 23 22:15:24 2022: envp[34]: <SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk>
+Wed Mar 23 22:15:24 2022: envp[35]: <CPATH=/usr/local/include>
+Wed Mar 23 22:15:24 2022: envp[36]: <LIBRARY_PATH=/usr/local/lib>
+Wed Mar 23 22:15:24 2022: envp[37]: <DYLD_INSERT_LIBRARIES=>
+Wed Mar 23 22:15:24 2022: process created with pid: 15649
+Wed Mar 23 22:15:24 2022: parent pid: 15648
+Wed Mar 23 22:15:24 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: executable: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang>
+Wed Mar 23 22:15:24 2022: argv[0]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang>
+Wed Mar 23 22:15:24 2022: argv[1]: <-cc1>
+Wed Mar 23 22:15:24 2022: argv[2]: <-triple>
+Wed Mar 23 22:15:24 2022: argv[3]: <x86_64-apple-macosx12.0.0>
+Wed Mar 23 22:15:24 2022: argv[4]: <-Wundef-prefix=TARGET_OS_>
+Wed Mar 23 22:15:24 2022: argv[5]: <-Wdeprecated-objc-isa-usage>
+Wed Mar 23 22:15:24 2022: argv[6]: <-Werror=deprecated-objc-isa-usage>
+Wed Mar 23 22:15:24 2022: argv[7]: <-Werror=implicit-function-declaration>
+Wed Mar 23 22:15:24 2022: argv[8]: <-emit-obj>
+Wed Mar 23 22:15:24 2022: argv[9]: <-mrelax-all>
+Wed Mar 23 22:15:24 2022: argv[10]: <--mrelax-relocations>
+Wed Mar 23 22:15:24 2022: argv[11]: <-disable-free>
+Wed Mar 23 22:15:24 2022: argv[12]: <-disable-llvm-verifier>
+Wed Mar 23 22:15:24 2022: argv[13]: <-discard-value-names>
+Wed Mar 23 22:15:24 2022: argv[14]: <-main-file-name>
+Wed Mar 23 22:15:24 2022: argv[15]: <main.cpp>
+Wed Mar 23 22:15:24 2022: argv[16]: <-mrelocation-model>
+Wed Mar 23 22:15:24 2022: argv[17]: <pic>
+Wed Mar 23 22:15:24 2022: argv[18]: <-pic-level>
+Wed Mar 23 22:15:24 2022: argv[19]: <2>
+Wed Mar 23 22:15:24 2022: argv[20]: <-mframe-pointer=all>
+Wed Mar 23 22:15:24 2022: argv[21]: <-fno-strict-return>
+Wed Mar 23 22:15:24 2022: argv[22]: <-fno-rounding-math>
+Wed Mar 23 22:15:24 2022: argv[23]: <-munwind-tables>
+Wed Mar 23 22:15:24 2022: argv[24]: <-target-sdk-version=12.3>
+Wed Mar 23 22:15:24 2022: argv[25]: <-fvisibility-inlines-hidden-static-local-var>
+Wed Mar 23 22:15:24 2022: argv[26]: <-target-cpu>
+Wed Mar 23 22:15:24 2022: argv[27]: <penryn>
+Wed Mar 23 22:15:24 2022: argv[28]: <-tune-cpu>
+Wed Mar 23 22:15:24 2022: argv[29]: <generic>
+Wed Mar 23 22:15:24 2022: argv[30]: <-debug-info-kind=standalone>
+Wed Mar 23 22:15:24 2022: argv[31]: <-dwarf-version=4>
+Wed Mar 23 22:15:24 2022: argv[32]: <-debugger-tuning=lldb>
+Wed Mar 23 22:15:24 2022: argv[33]: <-target-linker-version>
+Wed Mar 23 22:15:24 2022: argv[34]: <762>
+Wed Mar 23 22:15:24 2022: argv[35]: <-resource-dir>
+Wed Mar 23 22:15:24 2022: argv[36]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6>
+Wed Mar 23 22:15:24 2022: argv[37]: <-isysroot>
+Wed Mar 23 22:15:24 2022: argv[38]: </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk>
+Wed Mar 23 22:15:24 2022: argv[39]: <-I>
+Wed Mar 23 22:15:24 2022: argv[40]: <include>
+Wed Mar 23 22:15:24 2022: argv[41]: <-I/usr/local/include>
+Wed Mar 23 22:15:24 2022: argv[42]: <-stdlib=libc++>
+Wed Mar 23 22:15:24 2022: argv[43]: <-internal-isystem>
+Wed Mar 23 22:15:24 2022: argv[44]: </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1>
+Wed Mar 23 22:15:24 2022: argv[45]: <-internal-isystem>
+Wed Mar 23 22:15:24 2022: argv[46]: </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include>
+Wed Mar 23 22:15:24 2022: argv[47]: <-internal-isystem>
+Wed Mar 23 22:15:24 2022: argv[48]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include>
+Wed Mar 23 22:15:24 2022: argv[49]: <-internal-externc-isystem>
+Wed Mar 23 22:15:24 2022: argv[50]: </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include>
+Wed Mar 23 22:15:24 2022: argv[51]: <-internal-externc-isystem>
+Wed Mar 23 22:15:24 2022: argv[52]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include>
+Wed Mar 23 22:15:24 2022: argv[53]: <-O0>
+Wed Mar 23 22:15:24 2022: argv[54]: <-Wall>
+Wed Mar 23 22:15:24 2022: argv[55]: <-Wno-reorder-init-list>
+Wed Mar 23 22:15:24 2022: argv[56]: <-Wno-implicit-int-float-conversion>
+Wed Mar 23 22:15:24 2022: argv[57]: <-Wno-c99-designator>
+Wed Mar 23 22:15:24 2022: argv[58]: <-Wno-final-dtor-non-final-class>
+Wed Mar 23 22:15:24 2022: argv[59]: <-Wno-extra-semi-stmt>
+Wed Mar 23 22:15:24 2022: argv[60]: <-Wno-misleading-indentation>
+Wed Mar 23 22:15:24 2022: argv[61]: <-Wno-quoted-include-in-framework-header>
+Wed Mar 23 22:15:24 2022: argv[62]: <-Wno-implicit-fallthrough>
+Wed Mar 23 22:15:24 2022: argv[63]: <-Wno-enum-enum-conversion>
+Wed Mar 23 22:15:24 2022: argv[64]: <-Wno-enum-float-conversion>
+Wed Mar 23 22:15:24 2022: argv[65]: <-Wno-elaborated-enum-base>
+Wed Mar 23 22:15:24 2022: argv[66]: <-Wno-reserved-identifier>
+Wed Mar 23 22:15:24 2022: argv[67]: <-Wno-gnu-folding-constant>
+Wed Mar 23 22:15:24 2022: argv[68]: <-Wno-objc-load-method>
+Wed Mar 23 22:15:24 2022: argv[69]: <-std=c++11>
+Wed Mar 23 22:15:24 2022: argv[70]: <-fdeprecated-macro>
+Wed Mar 23 22:15:24 2022: argv[71]: <-fdebug-compilation-dir=/Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: argv[72]: <-ferror-limit>
+Wed Mar 23 22:15:24 2022: argv[73]: <19>
+Wed Mar 23 22:15:24 2022: argv[74]: <-stack-protector>
+Wed Mar 23 22:15:24 2022: argv[75]: <1>
+Wed Mar 23 22:15:24 2022: argv[76]: <-fstack-check>
+Wed Mar 23 22:15:24 2022: argv[77]: <-mdarwin-stkchk-strong-link>
+Wed Mar 23 22:15:24 2022: argv[78]: <-fblocks>
+Wed Mar 23 22:15:24 2022: argv[79]: <-fencode-extended-block-signature>
+Wed Mar 23 22:15:24 2022: argv[80]: <-fregister-global-dtors-with-atexit>
+Wed Mar 23 22:15:24 2022: argv[81]: <-fgnuc-version=4.2.1>
+Wed Mar 23 22:15:24 2022: argv[82]: <-fno-cxx-modules>
+Wed Mar 23 22:15:24 2022: argv[83]: <-fcxx-exceptions>
+Wed Mar 23 22:15:24 2022: argv[84]: <-fexceptions>
+Wed Mar 23 22:15:24 2022: argv[85]: <-fmax-type-align=16>
+Wed Mar 23 22:15:24 2022: argv[86]: <-fcommon>
+Wed Mar 23 22:15:24 2022: argv[87]: <-fcolor-diagnostics>
+Wed Mar 23 22:15:24 2022: argv[88]: <-clang-vendor-feature=+messageToSelfInClassMethodIdReturnType>
+Wed Mar 23 22:15:24 2022: argv[89]: <-clang-vendor-feature=+disableInferNewAvailabilityFromInit>
+Wed Mar 23 22:15:24 2022: argv[90]: <-clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation>
+Wed Mar 23 22:15:24 2022: argv[91]: <-fno-odr-hash-protocols>
+Wed Mar 23 22:15:24 2022: argv[92]: <-clang-vendor-feature=+enableAggressiveVLAFolding>
+Wed Mar 23 22:15:24 2022: argv[93]: <-clang-vendor-feature=+revert09abecef7bbf>
+Wed Mar 23 22:15:24 2022: argv[94]: <-clang-vendor-feature=+thisNoAlignAttr>
+Wed Mar 23 22:15:24 2022: argv[95]: <-clang-vendor-feature=+thisNoNullAttr>
+Wed Mar 23 22:15:24 2022: argv[96]: <-mllvm>
+Wed Mar 23 22:15:24 2022: argv[97]: <-disable-aligned-alloc-awareness=1>
+Wed Mar 23 22:15:24 2022: argv[98]: <-D__GCC_HAVE_DWARF2_CFI_ASM=1>
+Wed Mar 23 22:15:24 2022: argv[99]: <-o>
+Wed Mar 23 22:15:24 2022: argv[100]: </var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/main-ffe74b.o>
+Wed Mar 23 22:15:24 2022: argv[101]: <-x>
+Wed Mar 23 22:15:24 2022: argv[102]: <c++>
+Wed Mar 23 22:15:24 2022: argv[103]: <src/main.cpp>
+Wed Mar 23 22:15:24 2022: envp[0]: <SQ_WRAPPER_SOCKET=/tmp/build-wrapper-socket.Lyo8WR>
+Wed Mar 23 22:15:24 2022: envp[1]: <SQ_WRAPPER_LIBRARY=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/libinterceptor.dylib>
+Wed Mar 23 22:15:24 2022: envp[2]: <LC_CTYPE=UTF-8>
+Wed Mar 23 22:15:24 2022: envp[3]: <SHELL=/bin/bash>
+Wed Mar 23 22:15:24 2022: envp[4]: <_=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86/build-wrapper-macosx-x86>
+Wed Mar 23 22:15:24 2022: envp[5]: <__CFBundleIdentifier=com.apple.Terminal>
+Wed Mar 23 22:15:24 2022: envp[6]: <PATH=/Users/seidigapbarsanzhar/build-wrapper-macosx-x86:/Users/seidigapbarsanzhar/sonar-scanner-4.6.1.2450-macosx/bin:/Users/seidigapbarsanzhar/opt/anaconda3/bin:/Users/seidigapbarsanzhar/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin>
+Wed Mar 23 22:15:24 2022: envp[7]: <SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.PVE0OqFTRj/Listeners>
+Wed Mar 23 22:15:24 2022: envp[8]: <CONDA_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/conda>
+Wed Mar 23 22:15:24 2022: envp[9]: <PWD=/Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:24 2022: envp[10]: <HOME=/Users/seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[11]: <LOGNAME=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[12]: <CONDA_PROMPT_MODIFIER=(base) >
+Wed Mar 23 22:15:24 2022: envp[13]: <CONDA_DEFAULT_ENV=base>
+Wed Mar 23 22:15:24 2022: envp[14]: <XPC_FLAGS=0x0>
+Wed Mar 23 22:15:24 2022: envp[15]: <SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[16]: <USER=seidigapbarsanzhar>
+Wed Mar 23 22:15:24 2022: envp[17]: <TERM_SESSION_ID=4AC816E7-8F48-4E30-B988-A65BA4CFB136>
+Wed Mar 23 22:15:24 2022: envp[18]: <CONDA_SHLVL=1>
+Wed Mar 23 22:15:24 2022: envp[19]: <OLDPWD=/Users/seidigapbarsanzhar/Desktop/Game-Development/Game Project>
+Wed Mar 23 22:15:24 2022: envp[20]: <TERM_PROGRAM=Apple_Terminal>
+Wed Mar 23 22:15:24 2022: envp[21]: <TMPDIR=/var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/>
+Wed Mar 23 22:15:24 2022: envp[22]: <MAKEFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[23]: <MFLAGS=>
+Wed Mar 23 22:15:24 2022: envp[24]: <TERM_PROGRAM_VERSION=443>
+Wed Mar 23 22:15:24 2022: envp[25]: <XPC_SERVICE_NAME=0>
+Wed Mar 23 22:15:24 2022: envp[26]: <__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0>
+Wed Mar 23 22:15:24 2022: envp[27]: <PS1=\[\e[1;31m\]\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ >
+Wed Mar 23 22:15:24 2022: envp[28]: <CONDA_PYTHON_EXE=/Users/seidigapbarsanzhar/opt/anaconda3/bin/python>
+Wed Mar 23 22:15:24 2022: envp[29]: <_CE_M=>
+Wed Mar 23 22:15:24 2022: envp[30]: <CONDA_PREFIX=/Users/seidigapbarsanzhar/opt/anaconda3>
+Wed Mar 23 22:15:24 2022: envp[31]: <TERM=xterm-256color>
+Wed Mar 23 22:15:24 2022: envp[32]: <_CE_CONDA=>
+Wed Mar 23 22:15:24 2022: envp[33]: <MAKELEVEL=1>
+Wed Mar 23 22:15:24 2022: envp[34]: <SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk>
+Wed Mar 23 22:15:24 2022: envp[35]: <CPATH=/usr/local/include>
+Wed Mar 23 22:15:24 2022: envp[36]: <LIBRARY_PATH=/usr/local/lib>
+Wed Mar 23 22:15:24 2022: envp[37]: <DYLD_INSERT_LIBRARIES=>
+Wed Mar 23 22:15:25 2022: process created with pid: 15650
+Wed Mar 23 22:15:25 2022: parent pid: 15648
+Wed Mar 23 22:15:25 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:25 2022: executable: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld>
+Wed Mar 23 22:15:25 2022: argv[0]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld>
+Wed Mar 23 22:15:25 2022: argv[1]: <-demangle>
+Wed Mar 23 22:15:25 2022: argv[2]: <-lto_library>
+Wed Mar 23 22:15:25 2022: argv[3]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib>
+Wed Mar 23 22:15:25 2022: argv[4]: <-no_deduplicate>
+Wed Mar 23 22:15:25 2022: argv[5]: <-dynamic>
+Wed Mar 23 22:15:25 2022: argv[6]: <-arch>
+Wed Mar 23 22:15:25 2022: argv[7]: <x86_64>
+Wed Mar 23 22:15:25 2022: argv[8]: <-platform_version>
+Wed Mar 23 22:15:25 2022: argv[9]: <macos>
+Wed Mar 23 22:15:25 2022: argv[10]: <12.0.0>
+Wed Mar 23 22:15:25 2022: argv[11]: <12.3>
+Wed Mar 23 22:15:25 2022: argv[12]: <-syslibroot>
+Wed Mar 23 22:15:25 2022: argv[13]: </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk>
+Wed Mar 23 22:15:25 2022: argv[14]: <-o>
+Wed Mar 23 22:15:25 2022: argv[15]: <build/debug/play>
+Wed Mar 23 22:15:25 2022: argv[16]: <-Llib>
+Wed Mar 23 22:15:25 2022: argv[17]: <-L/usr/local/lib>
+Wed Mar 23 22:15:25 2022: argv[18]: <-lsdl2>
+Wed Mar 23 22:15:25 2022: argv[19]: </var/folders/jj/3l6zfq8d7wlbrfxgs3t1j7yw0000gn/T/main-ffe74b.o>
+Wed Mar 23 22:15:25 2022: argv[20]: <-lc++>
+Wed Mar 23 22:15:25 2022: argv[21]: <-lSystem>
+Wed Mar 23 22:15:25 2022: argv[22]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a>
+Wed Mar 23 22:15:25 2022: skipping process with pid: 15650
+Wed Mar 23 22:15:25 2022: process created with pid: 15651
+Wed Mar 23 22:15:25 2022: parent pid: 15648
+Wed Mar 23 22:15:25 2022: working directory: </Users/seidigapbarsanzhar/Desktop/Game-Development>
+Wed Mar 23 22:15:25 2022: executable: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil>
+Wed Mar 23 22:15:25 2022: argv[0]: </Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil>
+Wed Mar 23 22:15:25 2022: argv[1]: <-o>
+Wed Mar 23 22:15:25 2022: argv[2]: <build/debug/play.dSYM>
+Wed Mar 23 22:15:25 2022: argv[3]: <build/debug/play>
+Wed Mar 23 22:15:25 2022: skipping process with pid: 15651
+Wed Mar 23 22:15:25 2022: finalizing json file
+Wed Mar 23 22:15:25 2022: returned with code: 0

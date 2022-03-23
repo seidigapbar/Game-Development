@@ -8,10 +8,8 @@
 #include "maps.hpp"
 
 Map::Map(int number_of_cells)
-    :number_of_cells(number_of_cells), initialized(true)
-{
+    :number_of_cells(number_of_cells), initialized(true){
     this->Map::Initialize();
-    
 }
 
 void Map::Initialize(){

@@ -18,6 +18,7 @@ public:
     Player* GetPlayer();
 private:
     const int health_capacity; //Maybe not applicable?
+    const int building_price;
     Player* player_owner;
 };
 
