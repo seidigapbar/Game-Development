@@ -1,9 +1,23 @@
-#include <iostream>
+#include "Game.h"
 
-int main()
+// our Game object
+Game* g_game = 0;
+
+int main(int argc, char* args[])
 {
-    std::string greetings = "Huy";
-    std::cout << greetings << "\n";
+	g_game = new Game();
 
-    return EXIT_SUCCESS;
+	g_game->init("Chapter 1", 100, 100, 640, 480, false);
+
+	while(g_game->running())
+	{
+		g_game->handleEvents();
+		g_game->update();
+		g_game->render();
+	}
+	g_game->clean();
+
+	return 0;
 }
+
+
