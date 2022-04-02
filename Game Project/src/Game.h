@@ -3,7 +3,6 @@
 
 #include <SDL2/SDL.h>
 
-
 class Game
 {
 public:
@@ -13,7 +12,7 @@ public:
 
 	bool init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen);
 	void render();
-	void update() {}
+	void update();
 	void handleEvents();
 	void clean();
 
