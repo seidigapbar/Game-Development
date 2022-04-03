@@ -24,7 +24,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			if(m_pRenderer != 0) // renderer init success
 			{
 				std::cout << "renderer creation success\n";
-				SDL_SetRenderDrawColor(m_pRenderer, 255, 255, 255, 255);
+				SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
 			}
 			else
 			{
@@ -46,8 +46,8 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 
 	std::cout << "init success\n";
 	m_bRunning = true; // everything inited successfully, start the main loop
-
-	SDL_Surface* pTempSurface = SDL_LoadBMP("assets/animate.bmp");
+/*
+	SDL_Surface* pTempSurface = IMG_Load("assets/animate.jpg");
 	m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
 	SDL_FreeSurface(pTempSurface);
 	SDL_QueryTexture(m_pTexture, NULL, NULL, &m_sourceRectangle.w, &m_sourceRectangle.h);
@@ -60,16 +60,20 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	m_destinationRectangle.y = 0;
 	m_destinationRectangle.w = m_sourceRectangle.w;
 	m_destinationRectangle.h = m_sourceRectangle.h;
+*/
+	m_textureManager.load("assets/animate-alpha.png", "animate", m_pRenderer);
 
 	return true;
 }
 
 void Game::render()
 {
-	SDL_RenderClear(m_pRenderer); // clear the renderer to the draw color
-	//SDL_RenderCopy(m_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle);
-	SDL_RenderCopyEx(m_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle, 0, 0, SDL_FLIP_HORIZONTAL); // pass in the horizontal flip
-	SDL_RenderPresent(m_pRenderer); // draw to the screen
+	SDL_RenderClear(m_pRenderer);
+	
+	m_textureManager.draw("animate", 0, 0, 128, 82, m_pRenderer);
+	m_textureManager.drawFrame("animate", 100, 100, 128, 82, 1, m_currentFrame, m_pRenderer);
+
+	SDL_RenderPresent(m_pRenderer);
 }
 
 void Game::clean()
@@ -99,5 +103,5 @@ void Game::handleEvents()
 
 void Game::update()
 {
-	m_sourceRectangle.x = 128 * int(((SDL_GetTicks() / 100) % 6));
+	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
 }

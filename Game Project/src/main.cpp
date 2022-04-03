@@ -3,7 +3,7 @@
 // our Game object
 Game* g_game = 0;
 
-int main(int argc, char* args[])
+int main()
 {
 	g_game = new Game();
 
