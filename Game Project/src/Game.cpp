@@ -1,5 +1,11 @@
 #include <iostream>
+#include <vector>
 #include "Game.h"
+#include "TextureManager.h"
+#include "InputHandler.h"
+#include "GameStateMachine.h"
+
+Game* Game::s_pInstance = 0;
 
 bool Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen)
 {
@@ -12,56 +18,45 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			flags = SDL_WINDOW_FULLSCREEN;
 		}
 
-		std::cout << "SDL init success\n";
+		std::cout << "SDL init success" << std::endl;
 		// init the window
 		m_pWindow = SDL_CreateWindow(title, xpos, ypos, width, height, flags);
 
 		if(m_pWindow != 0) // window init success
 		{
-			std::cout << "window creation success\n";
+			std::cout << "window creation success" << std::endl;
 			m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
 
 			if(m_pRenderer != 0) // renderer init success
 			{
-				std::cout << "renderer creation success\n";
-				SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
+				std::cout << "renderer creation success" << std::endl;
+				SDL_SetRenderDrawColor(m_pRenderer, 0, 0, 0, 255);
 			}
 			else
 			{
-				std::cout << "renderer init fail\n";
+				std::cout << "renderer init fail" << std::endl;
 				return false; // renderer init fail
 			}
 		}
 		else
 		{
-			std::cout << "window init fail\n";
+			std::cout << "window init fail" << std::endl;
 			return false; // window init fail
 		}
 	}
 	else
 	{
-		std::cout << "SDL init fail\n";
+		std::cout << "SDL init fail" << std::endl;
 		return false; // SDL init fail
 	}
 
-	std::cout << "init success\n";
+	TheInputHandler::Instance()->initialiseJoysticks();
+
+	std::cout << "init success" << std::endl;
 	m_bRunning = true; // everything inited successfully, start the main loop
-/*
-	SDL_Surface* pTempSurface = IMG_Load("assets/animate.jpg");
-	m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
-	SDL_FreeSurface(pTempSurface);
-	SDL_QueryTexture(m_pTexture, NULL, NULL, &m_sourceRectangle.w, &m_sourceRectangle.h);
 
-	m_sourceRectangle.w = 128;
-	m_sourceRectangle.h = 82;
-
-
-	m_destinationRectangle.x = 0;
-	m_destinationRectangle.y = 0;
-	m_destinationRectangle.w = m_sourceRectangle.w;
-	m_destinationRectangle.h = m_sourceRectangle.h;
-*/
-	m_textureManager.load("assets/animate-alpha.png", "animate", m_pRenderer);
+	m_pGameStateMachine = new GameStateMachine();
+	m_pGameStateMachine->changeState(new MenuState());
 
 	return true;
 }
@@ -70,38 +65,32 @@ void Game::render()
 {
 	SDL_RenderClear(m_pRenderer);
 	
-	m_textureManager.draw("animate", 0, 0, 128, 82, m_pRenderer);
-	m_textureManager.drawFrame("animate", 100, 100, 128, 82, 1, m_currentFrame, m_pRenderer);
+	m_pGameStateMachine->render();
 
 	SDL_RenderPresent(m_pRenderer);
 }
 
 void Game::clean()
 {
-	std::cout << "cleaning game\n";
+	std::cout << "cleaning game" << std::endl;
 	SDL_DestroyWindow(m_pWindow);
 	SDL_DestroyRenderer(m_pRenderer);
+	TheInputHandler::Instance()->clean();
 	SDL_Quit();
 }
 
 void Game::handleEvents()
 {
-	SDL_Event event;
-	if(SDL_PollEvent(&event))
+	TheInputHandler::Instance()->update();
+	
+	if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_RETURN))
 	{
-		switch(event.type)
-		{
-			case SDL_QUIT:
-				m_bRunning = false;
-			break;
-
-			default:
-			break;
-		}
+		m_pGameStateMachine->changeState(new PlayState());
 	}
 }
 
 void Game::update()
 {
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+	m_pGameStateMachine->update();
 }
+

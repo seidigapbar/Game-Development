@@ -1,6 +1,8 @@
 #include "TextureManager.h"
 #include <SDL2/SDL_image.h>
 
+TextureManager* TextureManager::s_pInstance = 0;
+
 bool TextureManager::load(std::string fileName, std::string id, SDL_Renderer* pRenderer)
 {
 	SDL_Surface* pTempSurface = IMG_Load(fileName.c_str());
@@ -50,4 +52,9 @@ void TextureManager::drawFrame(std::string id, int x, int y, int width, int heig
 	destRect.y = y;
 
 	SDL_RenderCopyEx(pRenderer, m_textureMap[id], &srcRect, &destRect, 0, 0, flip);
+}
+
+void TextureManager::clearFromTextureMap(std::string id)
+{
+	m_textureMap.erase(id);
 }
