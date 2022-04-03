@@ -1,5 +1,5 @@
 #include "TextureManager.h"
-#include <SDL2/SDL_image.h>
+#include <SDL_image.h>
 
 bool TextureManager::load(std::string fileName, std::string id, SDL_Renderer* pRenderer)
 {
