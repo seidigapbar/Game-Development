@@ -1,36 +1,26 @@
+#pragma once
 #ifndef __Game__
-#define __Game__
+#define __Game__ 
 
-#include <SDL2/SDL.h>
-#include "TextureManager.h"
+#include "SDL2/SDL.h"
 
-class Game
+class Game 
 {
 public:
+    Game() = default;
+    ~Game() = default;
+    bool init(const char *title, int xpos, int ypos, int height, int width, int flags);
+    void render();
+    void update();
+    bool createSprite();
+    void handleEvents();
+    void clean();
+    bool isRunning();
+    private: 
+    SDL_Window* running_pWindow;
+    SDL_Renderer* running_pRenderer;
+    bool is_running;
 
-	Game() {}
-	~Game() {}
-
-	bool init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen);
-	void render();
-	void update();
-	void handleEvents();
-	void clean();
-
-	bool running() { return m_bRunning; }
-
-private:
-
-	SDL_Window* m_pWindow;
-	SDL_Renderer* m_pRenderer;
-	SDL_Texture* m_pTexture;
-	SDL_Rect m_sourceRectangle;
-	SDL_Rect m_destinationRectangle;
-
-	bool m_bRunning;
-
-	int m_currentFrame;
-	TextureManager m_textureManager;
 };
 
-#endif // __Game__
+#endif

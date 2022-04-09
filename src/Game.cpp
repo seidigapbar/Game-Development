@@ -1,107 +1,76 @@
-#include <iostream>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 #include "Game.h"
 
-bool Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen)
+bool Game::init(const char *title, int xpos, int ypos, int height, int width, int flags) 
 {
-	// attempt to initialize SDL
-	if(SDL_Init(SDL_INIT_EVERYTHING) == 0)
-	{
-		int flags = 0;
-		if(fullscreen)
+	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0) {
+		running_pWindow = SDL_CreateWindow(title, xpos, ypos, height, width, flags);
+		if (running_pWindow != 0) 
 		{
-			flags = SDL_WINDOW_FULLSCREEN;
-		}
-
-		std::cout << "SDL init success\n";
-		// init the window
-		m_pWindow = SDL_CreateWindow(title, xpos, ypos, width, height, flags);
-
-		if(m_pWindow != 0) // window init success
-		{
-			std::cout << "window creation success\n";
-			m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
-
-			if(m_pRenderer != 0) // renderer init success
-			{
-				std::cout << "renderer creation success\n";
-				SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
-			}
-			else
-			{
-				std::cout << "renderer init fail\n";
-				return false; // renderer init fail
-			}
-		}
-		else
-		{
-			std::cout << "window init fail\n";
-			return false; // window init fail
+			running_pRenderer = SDL_CreateRenderer(running_pWindow, -1, 0);
+			is_running = true;			
+			return true;
 		}
 	}
-	else
-	{
-		std::cout << "SDL init fail\n";
-		return false; // SDL init fail
-	}
-
-	std::cout << "init success\n";
-	m_bRunning = true; // everything inited successfully, start the main loop
-/*
-	SDL_Surface* pTempSurface = IMG_Load("assets/animate.jpg");
-	m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
-	SDL_FreeSurface(pTempSurface);
-	SDL_QueryTexture(m_pTexture, NULL, NULL, &m_sourceRectangle.w, &m_sourceRectangle.h);
-
-	m_sourceRectangle.w = 128;
-	m_sourceRectangle.h = 82;
-
-
-	m_destinationRectangle.x = 0;
-	m_destinationRectangle.y = 0;
-	m_destinationRectangle.w = m_sourceRectangle.w;
-	m_destinationRectangle.h = m_sourceRectangle.h;
-*/
-	m_textureManager.load("assets/animate-alpha.png", "animate", m_pRenderer);
-
-	return true;
+	return false;
 }
 
-void Game::render()
+void Game::render() 
 {
-	SDL_RenderClear(m_pRenderer);
-	
-	m_textureManager.draw("animate", 0, 0, 128, 82, m_pRenderer);
-	m_textureManager.drawFrame("animate", 100, 100, 128, 82, 1, m_currentFrame, m_pRenderer);
-
-	SDL_RenderPresent(m_pRenderer);
+	SDL_SetRenderDrawColor(running_pRenderer, 0, 0, 0, 255);
+	SDL_RenderClear(running_pRenderer);
+	SDL_RenderPresent(running_pRenderer);
 }
+void Game::update() {}
 
-void Game::clean()
-{
-	std::cout << "cleaning game\n";
-	SDL_DestroyWindow(m_pWindow);
-	SDL_DestroyRenderer(m_pRenderer);
-	SDL_Quit();
-}
-
-void Game::handleEvents()
+void Game::handleEvents() 
 {
 	SDL_Event event;
-	if(SDL_PollEvent(&event))
+	if (SDL_PollEvent(&event)) 
 	{
-		switch(event.type)
+		switch (event.type) 
 		{
-			case SDL_QUIT:
-				m_bRunning = false;
+		case SDL_QUIT:
+			is_running = false;
 			break;
-
-			default:
+		default:
 			break;
 		}
 	}
 }
-
-void Game::update()
+void Game::clean() 
 {
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+	SDL_DestroyRenderer(running_pRenderer);
+	SDL_DestroyWindow(running_pWindow);
+}
+
+bool Game::isRunning() { return is_running; }
+
+
+//Trying to understand how the things are rendered. So far not successful
+bool Game::createSprite()
+{
+	SDL_Rect m_sourceRectangle;
+	SDL_Rect m_destinationRectangle;
+	SDL_Surface *image;
+	SDL_RWops *rwop;
+	rwop = SDL_RWFromFile("assets/pixelman.png", "r");
+	image = IMG_LoadPNM_RW(rwop);
+	SDL_Texture* pixelman_Texture = SDL_CreateTextureFromSurface(this->running_pRenderer, image);
+	SDL_FreeSurface(image);
+
+	SDL_QueryTexture(pixelman_Texture, NULL, NULL,
+	&m_sourceRectangle.w, &m_sourceRectangle.h);
+
+
+	m_destinationRectangle.x = m_sourceRectangle.x = 0;
+	m_destinationRectangle.w = m_sourceRectangle.w;
+	m_destinationRectangle.h = m_sourceRectangle.h;
+	m_destinationRectangle.y = m_sourceRectangle.y = 0;
+
+	SDL_RenderCopy(this->running_pRenderer, pixelman_Texture, &m_sourceRectangle,
+	&m_destinationRectangle);
+
+	return true;
 }
