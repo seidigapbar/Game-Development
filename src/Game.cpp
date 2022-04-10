@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include <SDL_image.h>
 #include "Game.h"
 
 bool Game::init(const char *title, int xpos, int ypos, int height, int width, int flags) 
@@ -9,6 +9,10 @@ bool Game::init(const char *title, int xpos, int ypos, int height, int width, in
 		if (running_pWindow != 0) 
 		{
 			running_pRenderer = SDL_CreateRenderer(running_pWindow, -1, 0);
+			TheTextureManager::Instance()->load("assets/Walk2.png", "animate", running_pRenderer);
+			this->main_character = new Character("assets/Walk2.png", "main character", 220, 140, running_pRenderer);
+			this->main_character->displayOnScreen(this->current_frame);
+
 			is_running = true;			
 			return true;
 		}
@@ -20,9 +24,15 @@ void Game::render()
 {
 	SDL_SetRenderDrawColor(running_pRenderer, 0, 0, 0, 255);
 	SDL_RenderClear(running_pRenderer);
+	//main_character->displayOnScreen();
+	//TheTextureManager::Instance()->draw("main character", 220, 140, 100, 100, running_pRenderer);
+	//TheTextureManager::Instance()->drawFrame("animate", 100, 100, 72, 72, 1, current_frame, running_pRenderer);
+	this->main_character->displayOnScreen(this->current_frame);
 	SDL_RenderPresent(running_pRenderer);
 }
-void Game::update() {}
+void Game::update() {
+	current_frame = int(SDL_GetTicks() / 100);
+}
 
 void Game::handleEvents() 
 {
@@ -34,6 +44,9 @@ void Game::handleEvents()
 		case SDL_QUIT:
 			is_running = false;
 			break;
+		case SDL_KEYDOWN:
+			this->main_character->handleInput(this->current_frame);
+			break;
 		default:
 			break;
 		}
@@ -43,34 +56,8 @@ void Game::clean()
 {
 	SDL_DestroyRenderer(running_pRenderer);
 	SDL_DestroyWindow(running_pWindow);
+	delete this->main_character;
+	this->main_character = NULL;
 }
 
 bool Game::isRunning() { return is_running; }
-
-
-//Trying to understand how the things are rendered. So far not successful
-bool Game::createSprite()
-{
-	SDL_Rect m_sourceRectangle;
-	SDL_Rect m_destinationRectangle;
-	SDL_Surface *image;
-	SDL_RWops *rwop;
-	rwop = SDL_RWFromFile("assets/pixelman.png", "r");
-	image = IMG_LoadPNM_RW(rwop);
-	SDL_Texture* pixelman_Texture = SDL_CreateTextureFromSurface(this->running_pRenderer, image);
-	SDL_FreeSurface(image);
-
-	SDL_QueryTexture(pixelman_Texture, NULL, NULL,
-	&m_sourceRectangle.w, &m_sourceRectangle.h);
-
-
-	m_destinationRectangle.x = m_sourceRectangle.x = 0;
-	m_destinationRectangle.w = m_sourceRectangle.w;
-	m_destinationRectangle.h = m_sourceRectangle.h;
-	m_destinationRectangle.y = m_sourceRectangle.y = 0;
-
-	SDL_RenderCopy(this->running_pRenderer, pixelman_Texture, &m_sourceRectangle,
-	&m_destinationRectangle);
-
-	return true;
-}
